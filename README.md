@@ -1,4 +1,4 @@
-Simple save the folder in
+Simply save the folder in
 
 /usr/share/gnome-shell/extensions/
 
