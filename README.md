@@ -7,4 +7,6 @@ Simply save the folder in
 
 The free API rate limit should be enough for you, rate limit of 1/5sec applied
 
-If not, simply register an user account via https://etherscan.io/
+If not, simply register an user account via https://etherscan.io/ and obtain an API key
+
+You can replace your API key in the extension.js
