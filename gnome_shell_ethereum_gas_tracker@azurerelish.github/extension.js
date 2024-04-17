@@ -14,7 +14,7 @@ function init() {
 function enable() {
     Main.panel._rightBox.insert_child_at_index(_indicator, 0);
     getGasPrices();
-    Mainloop.timeout_add_seconds(6, function () {
+    Mainloop.timeout_add_seconds(15, function () {
         getGasPrices();
         return true; // Ensures the timeout is called again
     });
@@ -29,9 +29,13 @@ function getGasPrices() {
     _httpSession.queue_message(message, function (_httpSession, message) {
         if (message.status_code !== 200)
             return;
-        let json = JSON.parse(message.response_body.data);
-        let safeGasPrice = json.result.SafeGasPrice;
-        let fastGasPrice = json.result.FastGasPrice;
-        _indicator.set_text(`Safe: ${safeGasPrice}, Fast: ${fastGasPrice}`);
+        try {
+            let json = JSON.parse(message.response_body.data);
+            let safeGasPrice = json.result.SafeGasPrice || 'N/A';
+            let fastGasPrice = json.result.FastGasPrice || 'N/A';
+            _indicator.set_text(`Safe: ${safeGasPrice}, Fast: ${fastGasPrice}`);
+        } catch (e) {
+            _indicator.set_text('Error parsing API response');
+        }
     });
 }
