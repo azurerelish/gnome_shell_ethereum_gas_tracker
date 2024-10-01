@@ -1,11 +1,8 @@
 {
   "name": "GAS price tracker",
   "shell-version": [
-    "40",
-    "41",
-    "42",
-    "43",
-    "44"
+    "45",
+    "46"
   ],
   "uuid": "gnome_shell_ethereum_gas_tracker@azurerelish.github"
 }
