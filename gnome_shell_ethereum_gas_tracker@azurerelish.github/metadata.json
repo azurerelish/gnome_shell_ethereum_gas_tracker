@@ -4,5 +4,5 @@
     "description": "Display Ethereum gas price on the panel.\n\n It is using Etherscan (etherscan.io) service",
     "shell-version": [ "45", "46"],
     "url": "https://github.com/pulsanoracle",
-    "session-modes":  [ "unlock-dialog", "user" ]
+    "version": 1
 }
