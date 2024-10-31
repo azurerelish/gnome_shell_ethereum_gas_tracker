@@ -14,3 +14,4 @@ If not, simply register an user account via https://etherscan.io/ and obtain an 
 You can replace your API key in the extension.js
 
 *Stay tuned, I am planning to add a drop down list to display other blockchain's gas price
+*Gnome is slightly different in 45, 46 and the code has been rebuilt to fit those changes
