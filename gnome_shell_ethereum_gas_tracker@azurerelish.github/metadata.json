@@ -1,8 +1,8 @@
 {
-  "name": "GAS price tracker",
-  "shell-version": [
-    "45",
-    "46"
-  ],
-  "uuid": "gnome_shell_ethereum_gas_tracker@azurerelish.github"
+    "uuid": "ethereum_gas_tracker@pulsanoracle.github.io",
+    "name": "Ethereum Gas Price Tracker",
+    "description": "Display Ethereum gas price on the panel.",
+    "shell-version": [ "45", "46"],
+    "url": "https://github.com/pulsanoracle",
+    "session-modes":  [ "unlock-dialog", "user" ]
 }
